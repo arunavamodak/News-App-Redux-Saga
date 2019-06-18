@@ -6,7 +6,7 @@ function* fetchNewsSaga(action) {
     fetch(
       `https://newsapi.org/v2/top-headlines?source=google-news&country=${
         action.countryCode
-      }&apiKey=a9b320f1f47644f99dab6b9407db90b0`
+      }&apiKey=api_key`
     )
       .then(response => response.json())
       .then(json => {
